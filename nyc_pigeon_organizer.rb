@@ -20,17 +20,17 @@ def nyc_pigeon_organizer(data)
 # new_hash
         
 new_hash = {}
-data[:color].each |key, value|
-value.each do |name|
-  if new_hash.has_key?(name)
-    new_hash[name][:color] << key
-  else
-    new_hash[name] = {}
-    new_hash[name][:color] =  [key]
-   #key is purple value is names
-   #if key is not newHash = { "Theo" => {:color=>["purple"]}}
+data[:color].each do |key, value|
+  value.each do |name|
+    if new_hash.has_key?(name)
+      new_hash[name][:color] << key
+    else
+      new_hash[name] = {}
+      new_hash[name][:color] =  [key]
+    # key is purple value is names
+    # if key is not newHash = { "Theo" => {:color=>["purple"]}}
+    end
   end
-end
 end
 puts new_hash
 end
