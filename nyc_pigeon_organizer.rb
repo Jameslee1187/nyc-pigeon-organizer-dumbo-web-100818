@@ -15,7 +15,7 @@ data.each do |key, value|
     end
   end
 end
-puts new_hash
+p new_hash
 new_hash
         
          
