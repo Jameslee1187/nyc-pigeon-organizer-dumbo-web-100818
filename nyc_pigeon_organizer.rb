@@ -8,10 +8,10 @@ data.each do |key, value|
         if !new_hash[names][type].has_key?(names)
           new_hash[names][type] = []          
           if !new_hash[names][type].include?(spec)
-        new_hash[names][type] << spec.to_s
+            new_hash[names][type] << spec.to_s
+          end
+        end
       end
-    end
-  end
 end
 end
 end
