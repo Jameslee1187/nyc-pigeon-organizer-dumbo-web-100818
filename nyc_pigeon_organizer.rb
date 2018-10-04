@@ -34,10 +34,9 @@ data[:color].each do |key, value|
 end
 data[:gender].each do |key, value|
   value.each do |name|
-    if new_hash.has_key?(name)
+    if new_hash.has_key?(name) && new_hash[name].has_key?("gender")
       new_hash[name][:gender] << key.to_s
     else
-      new_hash[name] = {}
       new_hash[name][:gender] =  [key.to_s]
     # key is purple value is names
     # if key is not newHash = { "Theo" => {:color=>["purple"]}}
@@ -46,10 +45,9 @@ data[:gender].each do |key, value|
 end
 data[:lives].each do |key, value|
   value.each do |name|
-    if new_hash.has_key?(name)
+    if new_hash.has_key?(name)&& new_hash[name].has_key?("lives")
       new_hash[name][:lives] << key.to_s
     else
-      new_hash[name] = {}
       new_hash[name][:lives] =  [key.to_s]
     # key is purple value is names
     # if key is not newHash = { "Theo" => {:color=>["purple"]}}
