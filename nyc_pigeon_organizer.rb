@@ -31,5 +31,7 @@ value.each do |name|
    #if key is not newHash = { "Theo" => {:color=>["purple"]}}
   end
 end
+puts new_hash
+end
 
 
