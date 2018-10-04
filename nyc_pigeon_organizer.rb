@@ -10,6 +10,8 @@ data.each do |key, value|
       end
     end
   end
+end
+end
 new_hash
         
          
