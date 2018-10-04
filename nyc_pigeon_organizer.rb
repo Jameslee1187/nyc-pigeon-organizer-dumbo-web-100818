@@ -5,16 +5,16 @@ data.each do |key, value|
     spec.each do |names|
       if !new_hash.has_key?(names)
         new_hash[names] = {}
-        if !new_hash[names][type].has_key?(names)
+        if !new_hash[names][type].has_key?(type)
           new_hash[names][type] = []          
           if !new_hash[names][type].include?(spec)
             new_hash[names][type] << spec.to_s
           end
         end
       end
-end
-end
-end
+              end
+            end
+          end
 new_hash
         
          
