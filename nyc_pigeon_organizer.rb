@@ -23,10 +23,10 @@ new_hash = {}
 data[:color].each do |key, value|
   value.each do |name|
     if new_hash.has_key?(name)
-      new_hash[name][:color] << key
+      new_hash[name][:color] << key.to_s
     else
       new_hash[name] = {}
-      new_hash[name][:color] =  [key]
+      new_hash[name][:color] =  [key.to_s]
     # key is purple value is names
     # if key is not newHash = { "Theo" => {:color=>["purple"]}}
     end
