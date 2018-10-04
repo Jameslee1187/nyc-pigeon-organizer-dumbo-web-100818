@@ -7,8 +7,8 @@ data.each do |key, value|
         new_hash[names] = {}
         if !new_hash[names].has_key?(key)
           new_hash[names][type] = []          
-          if !new_hash[names][type].include?(type)
-            new_hash[names][type] << spec.to_s
+          if !new_hash[names][key].include?(type)
+            new_hash[names][key] << spec.to_s
           end
         end
       end
