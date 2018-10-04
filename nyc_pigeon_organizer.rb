@@ -55,7 +55,7 @@ data[:lives].each do |key, value|
   end
 end
 
-puts new_hash
+new_hash
 end
 
 
