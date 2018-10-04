@@ -23,7 +23,7 @@ new_hash = {}
 data[:color].each |key, value|
 value.each do |name|
   new_hash[name] = {}
-  new_hash[name][:color] =  
+  new_hash[name][:color] =  [key]
    #key is purple value is names
 end
 
